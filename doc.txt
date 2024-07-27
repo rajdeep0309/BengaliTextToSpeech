@@ -1,1 +1,1 @@
-Create a repository to build a ml model capable of reading the Bengali newspaper using voice.
+Create a repository to build a ml model capable of reading the Bengali newspaper using scanned image.
