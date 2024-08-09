@@ -16,10 +16,9 @@ _, thresh = cv2.threshold(blurred, 150, 255, cv2.THRESH_BINARY_INV)
 
 # Find contours in the binary image
 contours, hierarchy = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
+print(contours)
 # Initialize a list to store contours of thick text
 thick_text_contours = []
-
 # Set a minimum area threshold for what is considered "thick" text
 min_area = 90  # This value may need adjustment based on the image resolution
 min_aspect_ratio = 0.9 # Minimum width-to-height ratio for thick text
